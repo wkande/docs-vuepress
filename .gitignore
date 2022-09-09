@@ -2,7 +2,7 @@
 .DS_Store
 node_modules/
 
-docs/.vuepress/dist
+docs/.vitepress/dist/
 
 package-lock.json
 libs/myGitHubToken.json
