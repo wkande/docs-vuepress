@@ -1,24 +1,24 @@
 <script lang="ts" setup>
-import { ref } from 'vue'
-import { useFlyout } from '../composables/flyout.js'
-import VPIconChevronDown from './icons/VPIconChevronDown.vue'
-import VPIconMoreHorizontal from './icons/VPIconMoreHorizontal.vue'
-import VPMenu from './VPMenu.vue'
+import { ref } from 'vue';
+import { useFlyout } from '../composables/flyout.js';
+import VPIconChevronDown from './icons/VPIconChevronDown.vue';
+import VPIconMoreHorizontal from './icons/VPIconMoreHorizontal.vue';
+import VPMenu from './VPMenu.vue';
 
 defineProps<{
-  icon?: any
-  button?: string
-  label?: string
-  items?: any[]
-}>()
+  icon?: any;
+  button?: string;
+  label?: string;
+  items?: any[];
+}>();
 
-const open = ref(false)
-const el = ref<HTMLElement>()
+const open = ref(false);
+const el = ref<HTMLElement>();
 
-useFlyout({ el, onBlur })
+useFlyout({ el, onBlur });
 
 function onBlur() {
-  open.value = false
+  open.value = false;
 }
 </script>
 
@@ -43,7 +43,7 @@ function onBlur() {
           This ID used to to set the bnt text color togreen 
           when active by SidebarHeader.vue 
         -->
-        <span :id="'api3_'+button+'_Menu'">{{ button }}</span>
+        <span :id="'api3_' + button + '_Menu'">{{ button }}</span>
         <VPIconChevronDown class="text-icon" />
       </span>
 
@@ -85,7 +85,7 @@ function onBlur() {
 }
 
 .VPFlyout:hover .menu,
-.button[aria-expanded="true"] + .menu {
+.button[aria-expanded='true'] + .menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
