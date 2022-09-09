@@ -9,8 +9,6 @@ tags:
 
 # {{$frontmatter.title}}
 
-
-
 The Oracle Integration Specification (OIS) is based on
 [Open API specification (OAS)](https://swagger.io/specification/), but there are
 some differences, be sure to focus on the following documentation when working

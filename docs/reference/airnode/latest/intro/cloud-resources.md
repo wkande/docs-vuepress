@@ -13,8 +13,6 @@ tags:
 
 # {{$frontmatter.title}}
 
-
-
 When deployed to a cloud provider, such as AWS or GCP, Airnode uses certain
 resources to fully operate.
 

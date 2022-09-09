@@ -9,10 +9,16 @@
     "sync:sidebarHeader": "cp docs/_components/vitepress/SidebarHeader.vue  node_modules/vitepress/dist/client/theme-default/components/SidebarHeader.vue",
     "docs:dev": "yarn sync:navbar; yarn sync:sidebar; yarn sync:sidebarHeader; vitepress dev docs",
     "docs:build": "yarn sync:navbar; yarn sync:sidebar; yarn sync:sidebarHeader; vitepress build docs",
-    "docs:serve": "vitepress serve docs --port 8082"
+    "docs:serve": "vitepress serve docs --port 8082",
+    "format": "prettier --write \"./**/*.{js,vue,md,json,yaml}\" --loglevel silent",
+    "format:check": "prettier --check \"./**/*.{js,vue,md,json,yaml}\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "husky": "^8.0.1",
     "markdown-it": "^13.0.1",
+    "prettier": "^2.7.1",
     "vitepress": "^1.0.0-alpha.13",
     "vue": "^3.2.38"
   }

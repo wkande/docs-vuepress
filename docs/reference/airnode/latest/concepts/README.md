@@ -12,8 +12,6 @@ tags:
 
 # {{$frontmatter.title}}
 
-
-
 <Toc />
 
 The first protocol implemented for Airnode is request–response. An Airnode

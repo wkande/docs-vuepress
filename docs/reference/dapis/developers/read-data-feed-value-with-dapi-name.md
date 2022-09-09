@@ -7,7 +7,6 @@ folder: dApp Developers
 
 # {{$frontmatter.title}}
 
-
 <Toc/>
 
 This function reads a value from a dAPI using its name. In the code example

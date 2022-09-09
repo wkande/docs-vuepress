@@ -3,7 +3,7 @@ lang: en-US
 title: Calling a dAPI
 sidebarHeader: Guides
 sidebarSubHeader: → dAPP Developers
-description: 
+description:
 folder: Guides
 head:
   - - meta
@@ -16,7 +16,7 @@ head:
 
 <!--TitleSpan>{{$frontmatter.sidebarHeader}}</TitleSpan-->
 
-# {{$frontmatter.title}} 
+# {{$frontmatter.title}}
 
 It had to be easy and it is.
 

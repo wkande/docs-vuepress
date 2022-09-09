@@ -7,8 +7,6 @@ folder: Introduction
 
 # {{$frontmatter.title}}
 
-
-
 <Toc/>
 
 Third-party oracle solutions whitelabel existing APIs, relay their data as

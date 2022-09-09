@@ -6,10 +6,7 @@ basePath: /ois/v1.0
 tags:
 ---
 
-
 # {{$frontmatter.title}}
-
-
 
 <!--TocHeader /> <TOC class="table-of-contents" :include-level="[2,4]" /-->
 

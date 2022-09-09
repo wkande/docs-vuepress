@@ -7,7 +7,6 @@ folder: dApp Developers
 
 # {{$frontmatter.title}}
 
-
 <Toc/>
 
 For on-chain smart contracts, the function

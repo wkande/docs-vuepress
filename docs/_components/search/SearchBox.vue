@@ -4,11 +4,10 @@ Possible text highlighting: https://x-team.com/blog/highlight-text-vue-regex/
 
 <!-- v-click-outside="onClickOutside" -->
 <template>
-  <div
-    style="user-select: none"
-  >
-  <br/>
-  Persistent search goes here. Will work much like the search in original docs.
+  <div style="user-select: none">
+    <br />
+    Persistent search goes here. Will work much like the search in original
+    docs.
     <!-- Removed from input, keep in case needed - @keyup.enter="go(focusIndex)"-->
     <div class="sb-search-input-box">
       <input
@@ -32,9 +31,9 @@ Possible text highlighting: https://x-team.com/blog/highlight-text-vue-regex/
         result set limit reached
       </div>
     </div>
-    <a href="/explore/" style="color:green;">Link #1</a>
-    <br/>
-    <a href="/reference/airnode/latest/" style="color:green;">Link #2</a>
+    <a href="/explore/" style="color: green">Link #1</a>
+    <br />
+    <a href="/reference/airnode/latest/" style="color: green">Link #2</a>
     <!--search-SearchBoxSelect2
       v-if="basePaths"
       :pathParam="path"
@@ -56,12 +55,12 @@ Possible text highlighting: https://x-team.com/blog/highlight-text-vue-regex/
 
 /* global SEARCH_MAX_SUGGESTIONS, SEARCH_PATHS, SEARCH_HOTKEYS */
 export default {
-  name: 'SearchBox',
+  name: "SearchBox",
   data() {
     return {
       //v: Vue.version,
-      query: localStorage.getItem('search_query') || '',
-      scrollY: localStorage.getItem('scrollY'),
+      query: localStorage.getItem("search_query") || "",
+      scrollY: localStorage.getItem("scrollY"),
       focused: false,
       focusIndex: 0,
       suggestionsCnt: 0,
@@ -197,8 +196,8 @@ export default {
   },
 
   mounted() {
-    console.log('========== MOUNTED SEARCH')
-    console.log(this.basePaths)
+    console.log("========== MOUNTED SEARCH +++++++++++++");
+    console.log(this.basePaths);
     //this.setPath();
 
     // Is the path in basePaths? The user "discovered" a hidden path.
@@ -211,14 +210,14 @@ export default {
     this.placeholder = this.$site.themeConfig.searchPlaceholder || '';
     document.addEventListener('keydown', this.onHotkey);*/
   },
-  
+
   beforeDestroy() {
-    document.removeEventListener('keydown', this.onHotkey);
+    document.removeEventListener("keydown", this.onHotkey);
   },
 
   methods: {
     onClickOutside(url, event) {
-      this.$emit('clicked'); // goes to parent method
+      this.$emit("clicked"); // goes to parent method
     },
     // FROM CHILD, a new path has been selected
     // Called by child "SearchBoxSelect2.vue" component's "picklist"
@@ -236,11 +235,11 @@ export default {
       return 0;
     },
     setPath() {
-      const docSet = this.$route.path.split('/');
-      if (['airnode', 'ois'].includes(docSet[1])) {
-        this.path = '/' + docSet[1] + '/' + docSet[2];
+      const docSet = this.$route.path.split("/");
+      if (["airnode", "ois"].includes(docSet[1])) {
+        this.path = "/" + docSet[1] + "/" + docSet[2];
       } else {
-        this.path = '/' + docSet[1];
+        this.path = "/" + docSet[1];
       }
     },
     onHotkey(event) {
@@ -273,32 +272,32 @@ export default {
   },
 };
 
-function basePaths2(){
+function basePaths2() {
   return {
-      '/': 'All Documentation',
-      '/airnode/v0.7': 'Airnode v0.7',
-      '/airnode/v0.6': 'Airnode v0.6',
-      '/airnode/v0.5': 'Airnode v0.5',
-      '/airnode/v0.4': 'Airnode v0.4',
-      '/airnode/v0.3': 'Airnode v0.3',
-      '/airnode/v0.2': 'Airnode v0.2',
-      '/airnode/pre-alpha': 'Airnode pre-alpha',
-      '/api3': 'API3',
-      '/chainapi': 'ChainAPI',
-      '/dapis': 'dAPIs',
-      '/dao-members': 'DAO Members',
-      '/ois/v1.1': 'OIS v1.1',
-      '/ois/v1.0': 'OIS v1.0',
-      '/qrng': 'QRNG',
-    }
-};
+    "/": "All Documentation",
+    "/airnode/v0.7": "Airnode v0.7",
+    "/airnode/v0.6": "Airnode v0.6",
+    "/airnode/v0.5": "Airnode v0.5",
+    "/airnode/v0.4": "Airnode v0.4",
+    "/airnode/v0.3": "Airnode v0.3",
+    "/airnode/v0.2": "Airnode v0.2",
+    "/airnode/pre-alpha": "Airnode pre-alpha",
+    "/api3": "API3",
+    "/chainapi": "ChainAPI",
+    "/dapis": "dAPIs",
+    "/dao-members": "DAO Members",
+    "/ois/v1.1": "OIS v1.1",
+    "/ois/v1.0": "OIS v1.0",
+    "/qrng": "QRNG",
+  };
+}
 </script>
 
 <style scoped>
 .api3-searchbox {
   font-size: medium;
   padding: 0px 10px 10px 10px;
-  border-radius: .2em;
+  border-radius: 0.2em;
   background: transparent;
   /*position: absolute;
   right: 10px;
@@ -326,7 +325,7 @@ select {
 
 .select {
   display: grid;
-  grid-template-areas: 'select';
+  grid-template-areas: "select";
   align-items: center;
   position: relative;
 }

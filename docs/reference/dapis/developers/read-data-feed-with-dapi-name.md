@@ -7,8 +7,6 @@ folder: dApp Developers
 
 # {{$frontmatter.title}}
 
-
-
 <Toc/>
 
 This function reads a value and timestamp from a dAPI using its name. In the

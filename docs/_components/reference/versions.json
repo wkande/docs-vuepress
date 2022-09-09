@@ -13,6 +13,5 @@
     { "label": "v1.0", "path": "/reference/ois/v1.0/" }
   ],
   "airnodeLatest": "v0.7",
-  "oisLatest":"v1.1"
-
+  "oisLatest": "v1.1"
 }

@@ -39,6 +39,3 @@ features:
     details: Lorem ipsum...
     link: /reference/airnode/latest/
 ---
-
-
-

@@ -13,9 +13,6 @@ tags:
 
 # {{$frontmatter.title}}
 
-
-
-
 Differences in chain design inevitably lead to some unique chain-specific
 considerations. Below are idiosyncrasies we have identified, though it may not
 be comprehensive and we are interested in hearing if you encounter others.

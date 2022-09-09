@@ -7,7 +7,6 @@ folder: dApp Developers
 
 # {{$frontmatter.title}}
 
-
 The
 [DapiServer.sol](https://github.com/api3dao/airnode-protocol-v1/blob/v0.5.1/contracts/dapis/DapiServer.sol)
 contract serves data feeds to contracts with read access. All the related

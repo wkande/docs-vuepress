@@ -2,7 +2,7 @@
 title: Overview
 folder: Airnode
 basePath: /airnode/v0.7
-sidebarHeader: Reference 
+sidebarHeader: Reference
 sidebarSubHeader: → Airnode v0.7
 tags:
 ---
@@ -16,7 +16,6 @@ tags:
 Airnode is configured using its `config.json` file. The diagrams below
 illustrate the required files to successfully deploy an Airnode to AWS, GCP
 or a Docker Container.
-
 
 ::: tabs
 
@@ -37,8 +36,6 @@ or a Docker Container.
 2. <p class="diagram-line" style="margin-top:10px;"><b>secrets.env</b>: Values that should not be exposed in config.json.</p>
 3. <p class="diagram-line" style="margin-top:10px;"><b>Docker deployer image</b>: Deploys Airnode using its deploy command.</p>
 
-
-
 @tab Container
 
 <img src="/api-provider-overview-container.png" style="width:450px;">
@@ -48,8 +45,6 @@ or a Docker Container.
 3. <p class="diagram-line" style="margin-top:10px;"><b>Docker client image</b>: Deploys Airnode using its deploy command.</p>
 
 :::
-
-
 
 Airnode deployment files:
 

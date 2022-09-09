@@ -11,8 +11,6 @@ tags:
 
 # {{$frontmatter.title}}
 
-
-
 The `secrets.env` file is bundled with a [config.json](config-json.md) file and
 contains the secrets that the respective Airnode deployments will need. All
 variables defined in a `secrets.env` file will be available in the `config.json`

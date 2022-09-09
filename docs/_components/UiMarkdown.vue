@@ -4,13 +4,11 @@
   <div class="text-formatted" v-html="renderedMarkdown" />
 </template>
 
-
-
 <script>
-import markdownIt from 'markdown-it';
+import markdownIt from "markdown-it";
 
 export default {
-  name: 'UiMarkdown',
+  name: "UiMarkdown",
 
   props: {
     markdown: {
@@ -21,11 +19,11 @@ export default {
 
   setup(props) {
     let md = new markdownIt({ html: true }),
-        renderedMarkdown = md.render(props.markdown)
+      renderedMarkdown = md.render(props.markdown);
 
     return {
       renderedMarkdown,
-    }
+    };
   },
-}
+};
 </script>

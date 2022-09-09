@@ -4,7 +4,6 @@ sidebarHeader: Reference
 sidebarSubHeader: → dAPIs
 ---
 
-
 # {{$frontmatter.title}}
 
 Smart contract developers now have access to dAPIs through the new

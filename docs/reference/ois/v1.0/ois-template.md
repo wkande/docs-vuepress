@@ -6,10 +6,7 @@ basePath: /ois/v1.0
 tags:
 ---
 
-
 # {{$frontmatter.title}}
-
-
 
 An OIS (Oracle Integration Specifications) JSON object is part of an Airnode's
 `config.json` file.

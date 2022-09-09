@@ -5,9 +5,6 @@ sidebarHeader: Explore
 
 # {{$frontmatter.title}}
 
-
-
-
 _See the article,
 [dAPIs: APIs for dApps](https://medium.com/api3/dapis-apis-for-dapps-53b83f8d2493)
 for an overview of dAPIs, and how they relate to
@@ -24,7 +21,6 @@ third-party oracle solutions, which involve middlemen node operators, this
 approach is secure, transparent, cost-efficient and scalable. API3 composes
 dAPIs out of Beacons, and provides them as turn-key data feed solutions on many
 chains.
-
 
 ## `DapiServer.sol`
 

@@ -7,7 +7,6 @@ folder: dApp Developers
 
 # {{$frontmatter.title}}
 
-
 <Toc/>
 
 ::: warning This function uses IDs.

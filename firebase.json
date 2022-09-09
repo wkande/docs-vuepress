@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "redirects":[
+    "redirects": [
       {
         "source": "/airnode/latest/",
         "destination": "/reference/airnode/latest/",
@@ -18,10 +18,6 @@
       }
     ],
     "public": "docs/.vitepress/dist",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ]
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
   }
 }

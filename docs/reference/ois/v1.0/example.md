@@ -6,9 +6,6 @@ basePath: /ois/v1.0
 tags:
 ---
 
-
 # {{$frontmatter.title}}
-
-
 
 @[code](./example.json)

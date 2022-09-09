@@ -1,32 +1,40 @@
 <script lang="ts" setup>
-import { useSidebar } from '../composables/sidebar.js'
-import VPNavBarTitle from './VPNavBarTitle.vue'
-import VPNavBarSearch from './VPNavBarSearch.vue'
-import VPNavBarMenu from './VPNavBarMenu.vue'
-import VPNavBarTranslations from './VPNavBarTranslations.vue'
-import VPNavBarAppearance from './VPNavBarAppearance.vue'
-import VPNavBarSocialLinks from './VPNavBarSocialLinks.vue'
-import VPNavBarExtra from './VPNavBarExtra.vue'
-import VPNavBarHamburger from './VPNavBarHamburger.vue'
+import { useSidebar } from "../composables/sidebar.js";
+import VPNavBarTitle from "./VPNavBarTitle.vue";
+import VPNavBarSearch from "./VPNavBarSearch.vue";
+import VPNavBarMenu from "./VPNavBarMenu.vue";
+import VPNavBarTranslations from "./VPNavBarTranslations.vue";
+import VPNavBarAppearance from "./VPNavBarAppearance.vue";
+import VPNavBarSocialLinks from "./VPNavBarSocialLinks.vue";
+import VPNavBarExtra from "./VPNavBarExtra.vue";
+import VPNavBarHamburger from "./VPNavBarHamburger.vue";
 
 defineProps<{
-  isScreenOpen: boolean
-}>()
+  isScreenOpen: boolean;
+}>();
 
 defineEmits<{
-  (e: 'toggle-screen'): void
-}>()
+  (e: "toggle-screen"): void;
+}>();
 
-const { hasSidebar } = useSidebar()
+const { hasSidebar } = useSidebar();
 </script>
 
 <template>
   <!-- wkande Sep, 2022 added (style="user-select: none;") in the next line -->
-  <div class="VPNavBar" :class="{ 'has-sidebar' : hasSidebar }" style="user-select: none;">
+  <div
+    class="VPNavBar"
+    :class="{ 'has-sidebar': hasSidebar }"
+    style="user-select: none"
+  >
     <div class="container">
       <VPNavBarTitle>
-        <template #nav-bar-title-before><slot name="nav-bar-title-before" /></template>
-        <template #nav-bar-title-after><slot name="nav-bar-title-after" /></template>
+        <template #nav-bar-title-before
+          ><slot name="nav-bar-title-before"
+        /></template>
+        <template #nav-bar-title-after
+          ><slot name="nav-bar-title-after"
+        /></template>
       </VPNavBarTitle>
 
       <div class="content">

@@ -1,4 +1,31 @@
-import{_ as l,o as p,c,a as s,b as d,t,d as e,e as m,r as n}from"./app.b352a92c.js";const _=JSON.parse('{"title":"Airnode","description":"","frontmatter":{"title":"Airnode","docSetName":"Airnode v0.7","folder":"Concepts and Definitions","basePath":"/airnode/v0.7","tags":null},"headers":[{"level":2,"title":"airnodeAddress","slug":"airnodeaddress","link":"#airnodeaddress","children":[]},{"level":2,"title":"xpub","slug":"xpub","link":"#xpub","children":[]},{"level":2,"title":"Admin CLI: generate-mnemonic","slug":"admin-cli-generate-mnemonic","link":"#admin-cli-generate-mnemonic","children":[]},{"level":2,"title":"Verification","slug":"verification","link":"#verification","children":[]}],"relativePath":"reference/airnode/latest/concepts/airnode.md"}'),h={name:"reference/airnode/latest/concepts/airnode.md"},u={id:"frontmatter-title",tabindex:"-1"},b=s("a",{class:"header-anchor",href:"#frontmatter-title","aria-hidden":"true"},"#",-1),f=m(`<p>Airnode is a serverless oracle node implemented with a <em>&quot;set and forget&quot;</em><a href="./../grp-providers/airnode/design-philosophy.html">philosophy</a>.</p><p>An Airnode is capable of serving one or more APIs to <a href="./requester.html">requesters</a> (which are on-chain smart contracts) that request data served by a particular Airnode. Each and every Airnode has a <a href="./../grp-providers/guides/build-an-airnode/configuring-airnode.html#airnodewalletmnemonic">unique mnemonic</a> identifying its wallet. This mnemonic is kept secret and Airnode is publicly identified using the default <a href="./airnode.html#airnodeaddress">address</a> derived from the mnemonic.</p><h2 id="airnodeaddress" tabindex="-1"><code>airnodeAddress</code> <a class="header-anchor" href="#airnodeaddress" aria-hidden="true">#</a></h2><p>An Airnode is identified by the default address of a BIP 44 wallet (with the path <code>m/44&#39;/60&#39;/0&#39;/0/0</code>) which is referred to as the <code>airnodeAddress</code>. This address is same for all chains on which Airnode operates. The wallet mnemonic is specified in the <a href="./../reference/deployment-files/secrets-env.html">secrets.env</a> file when deploying the Airnode.</p><p>Use the admin CLI command <a href="./../reference/packages/admin-cli.html#derive-airnode-address">derive-airnode-address</a> to derive the <code>airnodeAddress</code> from the mnemonic for informational purposes.</p><div class="language-bash line-numbers-mode"><button class="copy"></button><span class="lang">bash</span><pre><code><span class="line"><span style="color:#A6ACCD;">npx @api3/airnode-admin derive-airnode-address \\</span></span>
+import {
+  _ as l,
+  o as p,
+  c,
+  a as s,
+  b as d,
+  t,
+  d as e,
+  e as m,
+  r as n,
+} from "./app.b352a92c.js";
+const _ = JSON.parse(
+    '{"title":"Airnode","description":"","frontmatter":{"title":"Airnode","docSetName":"Airnode v0.7","folder":"Concepts and Definitions","basePath":"/airnode/v0.7","tags":null},"headers":[{"level":2,"title":"airnodeAddress","slug":"airnodeaddress","link":"#airnodeaddress","children":[]},{"level":2,"title":"xpub","slug":"xpub","link":"#xpub","children":[]},{"level":2,"title":"Admin CLI: generate-mnemonic","slug":"admin-cli-generate-mnemonic","link":"#admin-cli-generate-mnemonic","children":[]},{"level":2,"title":"Verification","slug":"verification","link":"#verification","children":[]}],"relativePath":"reference/airnode/latest/concepts/airnode.md"}'
+  ),
+  h = { name: "reference/airnode/latest/concepts/airnode.md" },
+  u = { id: "frontmatter-title", tabindex: "-1" },
+  b = s(
+    "a",
+    {
+      class: "header-anchor",
+      href: "#frontmatter-title",
+      "aria-hidden": "true",
+    },
+    "#",
+    -1
+  ),
+  f = m(
+    `<p>Airnode is a serverless oracle node implemented with a <em>&quot;set and forget&quot;</em><a href="./../grp-providers/airnode/design-philosophy.html">philosophy</a>.</p><p>An Airnode is capable of serving one or more APIs to <a href="./requester.html">requesters</a> (which are on-chain smart contracts) that request data served by a particular Airnode. Each and every Airnode has a <a href="./../grp-providers/guides/build-an-airnode/configuring-airnode.html#airnodewalletmnemonic">unique mnemonic</a> identifying its wallet. This mnemonic is kept secret and Airnode is publicly identified using the default <a href="./airnode.html#airnodeaddress">address</a> derived from the mnemonic.</p><h2 id="airnodeaddress" tabindex="-1"><code>airnodeAddress</code> <a class="header-anchor" href="#airnodeaddress" aria-hidden="true">#</a></h2><p>An Airnode is identified by the default address of a BIP 44 wallet (with the path <code>m/44&#39;/60&#39;/0&#39;/0/0</code>) which is referred to as the <code>airnodeAddress</code>. This address is same for all chains on which Airnode operates. The wallet mnemonic is specified in the <a href="./../reference/deployment-files/secrets-env.html">secrets.env</a> file when deploying the Airnode.</p><p>Use the admin CLI command <a href="./../reference/packages/admin-cli.html#derive-airnode-address">derive-airnode-address</a> to derive the <code>airnodeAddress</code> from the mnemonic for informational purposes.</p><div class="language-bash line-numbers-mode"><button class="copy"></button><span class="lang">bash</span><pre><code><span class="line"><span style="color:#A6ACCD;">npx @api3/airnode-admin derive-airnode-address \\</span></span>
 <span class="line"><span style="color:#A6ACCD;">--airnode-mnemonic </span><span style="color:#89DDFF;">&quot;</span><span style="color:#C3E88D;">cricket elephant ...</span><span style="color:#89DDFF;">&quot;</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#676E95;"># outputs</span></span>
@@ -24,4 +51,23 @@ import{_ as l,o as p,c,a as s,b as d,t,d as e,e as m,r as n}from"./app.b352a92c.
 <span class="line"></span>
 <span class="line"><span style="color:#676E95;"># output</span></span>
 <span class="line"><span style="color:#A6ACCD;">Airnode xpub is: VALID</span></span>
-<span class="line"></span></code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div>`,16);function A(a,y,C,v,g,D){const r=n("VersionWarning"),o=n("TocHeader"),i=n("TOC");return p(),c("div",null,[s("h1",u,[d(t(a.$frontmatter.title)+" ",1),b]),e(r),e(o),e(i,{class:"table-of-contents","include-level":[2,3]}),f])}const w=l(h,[["render",A]]);export{_ as __pageData,w as default};
+<span class="line"></span></code></pre><div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div>`,
+    16
+  );
+function A(a, y, C, v, g, D) {
+  const r = n("VersionWarning"),
+    o = n("TocHeader"),
+    i = n("TOC");
+  return (
+    p(),
+    c("div", null, [
+      s("h1", u, [d(t(a.$frontmatter.title) + " ", 1), b]),
+      e(r),
+      e(o),
+      e(i, { class: "table-of-contents", "include-level": [2, 3] }),
+      f,
+    ])
+  );
+}
+const w = l(h, [["render", A]]);
+export { _ as __pageData, w as default };

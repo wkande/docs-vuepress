@@ -9,6 +9,4 @@ tags:
 
 # {{$frontmatter.title}}
 
-
-
 @[code json](./example.json)

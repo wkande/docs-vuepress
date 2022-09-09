@@ -1,6 +1,7 @@
 ---
 title: API3 Core Technical Team
 ---
+
 <script setup>
 import { VPTeamMembers } from 'vitepress/theme'
 
@@ -55,8 +56,6 @@ const members = [
 ]
 </script>
 
-
 # {{$frontmatter.title}}
-
 
 <VPTeamMembers size="small" :members="members" />

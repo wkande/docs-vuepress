@@ -5,11 +5,9 @@ basePath: /reference/ois/v1.1
 tags:
 ---
 
-
 <reference-VersionPicklist/>
 
 # {{$frontmatter.title}}
-
 
 <!--TocHeader /> <TOC class="table-of-contents" :include-level="[2,5]" /-->
 

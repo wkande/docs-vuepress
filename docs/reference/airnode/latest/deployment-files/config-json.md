@@ -10,11 +10,6 @@ tags:
 
 # {{$frontmatter.title}}
 
-
-
-
-
-
 The `config.json` defines a single Airnode deployment. The file contents are a
 single JSON object. Each config object can be thought of as the static NoSQL
 database of an Airnode deployment. It contains five fields as show below.

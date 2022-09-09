@@ -14,7 +14,6 @@ Move this page to Explore
 
 :::
 
-
 OIS (or Oracle Integration Specifications) is a JSON object that describes an
 API specification and defines Airnode endpoints linked to API operations (a.k.a.
 endpoints). It is one of five root level objects in a `config.json` file that

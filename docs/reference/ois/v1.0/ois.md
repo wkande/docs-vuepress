@@ -4,7 +4,7 @@ docSetName: OIS v1.0
 sidebarHeader: Reference → OIS v1.0
 basePath: /ois/v1.0
 tags:
-rightAnchor: 
+rightAnchor:
   showDepth: 1
   expand:
     trigger: hover
@@ -12,11 +12,9 @@ rightAnchor:
   disableGlobalUI: false
 ---
 
-
 # {{$frontmatter.title}}
 
-
-<!--TocHeader /--> 
+<!--TocHeader /-->
 
 <!--Toc/-->
 

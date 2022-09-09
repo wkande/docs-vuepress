@@ -29,7 +29,6 @@ approach is secure, transparent, cost-efficient and scalable. API3 composes
 dAPIs out of Beacons, and provides them as turn-key data feed solutions on many
 chains.
 
-
 ## `DapiServer.sol`
 
 Developers use the

@@ -1,29 +1,28 @@
 <script lang="ts" setup>
-import { ref, watchPostEffect, nextTick } from 'vue'
-import { useSidebar } from '../composables/sidebar.js'
-import VPSidebarGroup from './VPSidebarGroup.vue'
+import { ref, watchPostEffect, nextTick } from "vue";
+import { useSidebar } from "../composables/sidebar.js";
+import VPSidebarGroup from "./VPSidebarGroup.vue";
 // wkand Aug 2022 added next line
-import SidebarHeader from './SidebarHeader.vue'
+import SidebarHeader from "./SidebarHeader.vue";
 
-const { sidebar, hasSidebar } = useSidebar()
+const { sidebar, hasSidebar } = useSidebar();
 
 const props = defineProps<{
-  open: boolean
-}>()
+  open: boolean;
+}>();
 
 // a11y: focus Nav element when menu has opened
-let navEl = ref<(Element & { focus(): void }) | null>(null)
+let navEl = ref<(Element & { focus(): void }) | null>(null);
 
 watchPostEffect(async () => {
   if (props.open) {
-    await nextTick()
-    navEl.value?.focus()
+    await nextTick();
+    navEl.value?.focus();
   }
-})
+});
 </script>
 
 <template>
-
   <aside
     v-if="hasSidebar"
     class="VPSidebar"
@@ -31,9 +30,14 @@ watchPostEffect(async () => {
     ref="navEl"
     @click.stop
   >
-  <!-- wkande Aug 2022 added next line-->
-  <SidebarHeader  style="margin-top:5px;"/>
-    <nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1">
+    <!-- wkande Aug 2022 added next line-->
+    <SidebarHeader style="margin-top: 5px" />
+    <nav
+      class="nav"
+      id="VPSidebarNav"
+      aria-labelledby="sidebar-aria-label"
+      tabindex="-1"
+    >
       <span class="visually-hidden" id="sidebar-aria-label">
         Sidebar Navigation
       </span>
@@ -73,8 +77,7 @@ watchPostEffect(async () => {
   opacity: 1;
   visibility: visible;
   transform: translateX(0);
-  transition: opacity 0.25s,
-              transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: opacity 0.25s, transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .dark .VPSidebar {
@@ -98,8 +101,14 @@ watchPostEffect(async () => {
 
 @media (min-width: 1440px) {
   .VPSidebar {
-    padding-left: max(32px, calc((100% - (var(--vp-layout-max-width) - 64px)) / 2));
-    width: calc((100% - (var(--vp-layout-max-width) - 64px)) / 2 + var(--vp-sidebar-width) - 32px);
+    padding-left: max(
+      32px,
+      calc((100% - (var(--vp-layout-max-width) - 64px)) / 2)
+    );
+    width: calc(
+      (100% - (var(--vp-layout-max-width) - 64px)) / 2 + var(--vp-sidebar-width) -
+        32px
+    );
   }
 }
 

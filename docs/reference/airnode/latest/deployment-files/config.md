@@ -1,7 +1,7 @@
 ---
 lang: en-US
 title: config.json
-description: 
+description:
 sidebarHeader: Reference → Airnode v0.7
 home: false
 head:
