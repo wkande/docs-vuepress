@@ -59,8 +59,11 @@ export default {
   data() {
     return {
       //v: Vue.version,
-      query: localStorage.getItem('search_query') || '',
-      scrollY: localStorage.getItem('scrollY'),
+      /* vitepress docs:build has issue with localStorage 9-9-2022
+      will need to load these in mount()
+      */
+      query: undefined, //localStorage.getItem('search_query') || '',
+      scrollY: undefined, //localStorage.getItem('scrollY'),
       focused: false,
       focusIndex: 0,
       suggestionsCnt: 0,

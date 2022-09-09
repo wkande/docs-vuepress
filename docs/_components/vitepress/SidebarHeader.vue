@@ -17,8 +17,8 @@ export default {
     text: undefined,
     subText: undefined,
     show: undefined,
-    api3_navbarGuidesBtn: document.getElementById('api3_Guides_Menu'),
-    api3_navbarReferenceBtn: document.getElementById('api3_Reference_Menu'),
+    api3_navbarGuidesBtn: undefined,
+    api3_navbarReferenceBtn: undefined,
   }),
   mounted() {
     console.log('===== SidebarHeader MOUNTED =====');
