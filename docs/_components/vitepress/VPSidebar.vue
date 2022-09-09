@@ -2,7 +2,7 @@
 import { ref, watchPostEffect, nextTick } from 'vue';
 import { useSidebar } from '../composables/sidebar.js';
 import VPSidebarGroup from './VPSidebarGroup.vue';
-// wkand Aug 2022 added next line
+// wkande: Aug 2022: added import, next line
 import SidebarHeader from './SidebarHeader.vue';
 
 const { sidebar, hasSidebar } = useSidebar();
@@ -30,7 +30,7 @@ watchPostEffect(async () => {
     ref="navEl"
     @click.stop
   >
-    <!-- wkande Aug 2022 added next line-->
+    <!-- wkande: Aug 2022: added SidebarHeader, next line -->
     <SidebarHeader style="margin-top: 5px" />
     <nav
       class="nav"
