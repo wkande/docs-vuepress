@@ -5,10 +5,10 @@
 </template>
 
 <script>
-import markdownIt from "markdown-it";
+import markdownIt from 'markdown-it';
 
 export default {
-  name: "UiMarkdown",
+  name: 'UiMarkdown',
 
   props: {
     markdown: {

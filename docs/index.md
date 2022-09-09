@@ -4,7 +4,12 @@ layout: home
 hero:
   name: API3
   text: dAPI datafeeds powered by Airnode.
-  tagline: dAPIs are continuously updated streams of off-chain data, such as the latest cryptocurrency, stock and commodity prices. They can power various decentralized applications such as DeFi lending, synthetic assets, stable coins, derivatives, NFTs and more. Airnode is a serverless oracle node implemented with a "set and forget" philosophy.
+  tagline:
+    dAPIs are continuously updated streams of off-chain data, such as the latest
+    cryptocurrency, stock and commodity prices. They can power various
+    decentralized applications such as DeFi lending, synthetic assets, stable
+    coins, derivatives, NFTs and more. Airnode is a serverless oracle node
+    implemented with a "set and forget" philosophy.
   image:
     src: /beacons.svg
     alt: API3

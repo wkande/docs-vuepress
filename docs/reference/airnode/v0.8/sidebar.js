@@ -1,7 +1,7 @@
 module.exports = [
   {
-    text: "",
+    text: '',
     collapsable: false,
-    items: [{ text: "ChangeLog", link: "/reference/airnode/v0.8/" }],
+    items: [{ text: 'ChangeLog', link: '/reference/airnode/v0.8/' }],
   },
 ];

@@ -18,9 +18,9 @@ transparency, cost-efficiency and scalability in a turn-key package.
 signed by the owner of the data. This means that the data that will update a
 feed cannot be tampered with once it leaves the source. Furthermore, the API
 providers host a first-party oracle node,
-<router-link to="/reference/airnode/latest/">Airnode</router-link>, to
-push the data to the chain themselves. This renders denial of service attacks by
-third parties ineffective.
+<router-link to="/reference/airnode/latest/">Airnode</router-link>, to push the
+data to the chain themselves. This renders denial of service attacks by third
+parties ineffective.
 
 **Transparency**: The cryptographic signatures prove that the data that updates
 a feed comes directly from a specific API provider. Furthermore, Beacons that

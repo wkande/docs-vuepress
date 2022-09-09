@@ -11,27 +11,27 @@
 </template>
 
 <script>
-import versions from "./versions";
-import { useRouter, useData, useRoute } from "vitepress";
-import { watch } from "vue";
-import globalSearch from "../../.vitepress/theme/index.js";
+import versions from './versions';
+import { useRouter, useData, useRoute } from 'vitepress';
+import { watch } from 'vue';
+import globalSearch from '../../.vitepress/theme/index.js';
 
 //https://github.com/vuejs/vue-router/issues/3379
 
 export default {
-  name: "VersionPicklist",
+  name: 'VersionPicklist',
   data: () => ({
     path: undefined,
     versions: undefined,
     goRouterFunc: useRouter().go,
   }),
   mounted() {
-    console.log("globalSearch", globalSearch);
+    console.log('globalSearch', globalSearch);
     // Watch for page change and alter the picklist as needed
     const { page } = useData();
     watch(page, (currentPage) => {
       const p = currentPage.relativePath;
-      this.parsePath("/" + p);
+      this.parsePath('/' + p);
       this.setPickListData();
     });
     const { path } = useRoute();
@@ -44,13 +44,13 @@ export default {
   methods: {
     parsePath(p) {
       // Set this.path to the new path
-      const arr = p.split("/");
-      this.path = "/" + arr[1] + "/" + arr[2] + "/" + arr[3] + "/";
+      const arr = p.split('/');
+      this.path = '/' + arr[1] + '/' + arr[2] + '/' + arr[3] + '/';
     },
     setPickListData() {
-      if (this.path.indexOf("/reference/airnode/") > -1) {
+      if (this.path.indexOf('/reference/airnode/') > -1) {
         this.versions = versions.airnode;
-      } else if (this.path.indexOf("/reference/ois/") > -1) {
+      } else if (this.path.indexOf('/reference/ois/') > -1) {
         this.versions = versions.ois;
       }
     },

@@ -1,11 +1,11 @@
 module.exports = [
   {
-    text: "",
+    text: '',
     collapsable: false,
     items: [
       {
-        text: "API3 Market",
-        link: "/reference/dapis/introduction/api3-market.md",
+        text: 'API3 Market',
+        link: '/reference/dapis/introduction/api3-market.md',
       },
     ],
   },

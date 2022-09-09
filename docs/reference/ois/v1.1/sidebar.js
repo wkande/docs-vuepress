@@ -1,9 +1,9 @@
 module.exports = [
   {
-    text: "",
+    text: '',
     collapsable: false,
     items: [
-      { text: "Understanding OIS", link: "/reference/ois/v1.1/" },
+      { text: 'Understanding OIS', link: '/reference/ois/v1.1/' },
       /*'/reference/ois/v1.1/ois.md',
       '/reference/ois/v1.1/reserved-parameters.md',
       '/reference/ois/v1.1/processing.md',

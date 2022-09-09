@@ -14,8 +14,8 @@ tags:
 # {{$frontmatter.title}}
 
 Airnode is configured using its `config.json` file. The diagrams below
-illustrate the required files to successfully deploy an Airnode to AWS, GCP
-or a Docker Container.
+illustrate the required files to successfully deploy an Airnode to AWS, GCP or a
+Docker Container.
 
 ::: tabs
 

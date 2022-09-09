@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: "Tabs",
+  name: 'Tabs',
   data: () => ({
     tabs: [],
     content: [],
@@ -39,8 +39,8 @@ export default {
   mounted() {
     let tabChanged = false;
     this.$slots.default().forEach((element) => {
-      if (element.el.innerText.indexOf("@tab:") > -1) {
-        this.tabs.push(element.el.innerText.split(":")[1]);
+      if (element.el.innerText.indexOf('@tab:') > -1) {
+        this.tabs.push(element.el.innerText.split(':')[1]);
         tabChanged = true;
       } else if (tabChanged === true) {
         this.content.push(element.el.outerHTML);
@@ -52,23 +52,23 @@ export default {
       }
     });
     this.$nextTick(() => {
-      document.getElementById("0-content").style.display = "block";
-      document.getElementById(0).className += " active";
+      document.getElementById('0-content').style.display = 'block';
+      document.getElementById(0).className += ' active';
     });
   },
   methods: {
     openTab(evt, tabIndex) {
       var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
+      tabcontent = document.getElementsByClassName('tabcontent');
       for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+        tabcontent[i].style.display = 'none';
       }
-      tablinks = document.getElementsByClassName("tablinks");
+      tablinks = document.getElementsByClassName('tablinks');
       for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(' active', '');
       }
-      document.getElementById(tabIndex + "-content").style.display = "block";
-      evt.currentTarget.className += " active";
+      document.getElementById(tabIndex + '-content').style.display = 'block';
+      evt.currentTarget.className += ' active';
     },
   },
 };

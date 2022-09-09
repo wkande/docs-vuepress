@@ -8,13 +8,14 @@ tags:
 
 # {{$frontmatter.title}}
 
-An Airnode is a first-party oracle that will push off-chain API data to
-any on-chain requester. It is defined by a [config.json](/reference/airnode/latest/) file.
+An Airnode is a first-party oracle that will push off-chain API data to any
+on-chain requester. It is defined by a [config.json](/reference/airnode/latest/)
+file.
 
-See the [Guides](/guides/providers/) section in the API Provider docs to
-build the necessary files required to deploy an Airnode. The diagrams below
-illustrate the required components to successfully deploy an Airnode to AWS, GCP
-or a Docker Container.
+See the [Guides](/guides/providers/) section in the API Provider docs to build
+the necessary files required to deploy an Airnode. The diagrams below illustrate
+the required components to successfully deploy an Airnode to AWS, GCP or a
+Docker Container.
 
 <!-- https://github.com/Jacobs63/vue3-tabs-component -->
 

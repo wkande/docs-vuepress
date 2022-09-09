@@ -1,9 +1,9 @@
 module.exports = [
   {
-    text: "",
+    text: '',
     collapsable: false,
     items: [
-      { text: "ChangeLog", link: "/reference/airnode/latest/" },
+      { text: 'ChangeLog', link: '/reference/airnode/latest/' },
       /*'/reference/airnode/latest/deployment-files/config-json.md', 
       '/reference/airnode/latest/deployment-files/secrets-env.md', 
       '/reference/airnode/latest/deployment-files/aws-env.md', 
@@ -11,12 +11,12 @@ module.exports = [
     ],
   },
   {
-    text: "AIRNODE EXPLAINED",
+    text: 'AIRNODE EXPLAINED',
     collapsable: false,
     items: [],
   },
   {
-    text: "DEPLOYMENT FILES",
+    text: 'DEPLOYMENT FILES',
     collapsable: false,
     items: [
       //{'text': 'ssd', 'link':'/reference/airnode/latest/deployment-files/'},
@@ -27,7 +27,7 @@ module.exports = [
     ],
   },
   {
-    text: "CLOUD PROVIDERS",
+    text: 'CLOUD PROVIDERS',
     collapsable: false,
     items: [
       //{'text': 'ssd', 'link':'/reference/airnode/latest/deployment-files/'},

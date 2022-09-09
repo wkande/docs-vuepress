@@ -1,7 +1,7 @@
 module.exports = [
   {
-    text: "",
+    text: '',
     collapsible: false,
-    items: [{ text: "Calling a dAPI", link: "/guides/developers/" }],
+    items: [{ text: 'Calling a dAPI', link: '/guides/developers/' }],
   },
 ];

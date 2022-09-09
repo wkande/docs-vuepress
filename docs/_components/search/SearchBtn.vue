@@ -32,7 +32,7 @@
 //import SearchBox2 from './SearchBox2';
 
 export default {
-  name: "SearchBtn",
+  name: 'SearchBtn',
   components: {
     //SearchBox2,
   },
@@ -47,7 +47,7 @@ export default {
     },
     onChildClick() {
       // The modal will send a msg to close when user clicks outside the modal
-      console.log("Closing the search dialog");
+      console.log('Closing the search dialog');
       this.showModal = false;
     },
   },

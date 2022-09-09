@@ -27,7 +27,8 @@ chains.
 Developers use the
 [DapiServer.sol](https://github.com/api3dao/airnode-protocol-v1/blob/main/contracts/dapis/DapiServer.sol)
 contract to access dAPIs. `DapiServer.sol` reads directly from its data store of
-Beacons, which are powered by API provider-owned and operated [Airnodes](/reference/airnode/latest/).
+Beacons, which are powered by API provider-owned and operated
+[Airnodes](/reference/airnode/latest/).
 
 > <img src="./assets/images/dapp-beacon.png" width="550px"/>
 
@@ -45,8 +46,7 @@ accessible using `DapiServer.sol`.
   IDapiServer(_dapiServerContractAddress).readDataFeedWithDapiName("ETH/USD");
 ```
 
-See the [dApp Developers](/) section to learn more about accessing
-dAPIs.
+See the [dApp Developers](/) section to learn more about accessing dAPIs.
 
 ## dAPI Composition
 

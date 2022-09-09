@@ -8,11 +8,11 @@
 </template>
 
 <script>
-import { useData, useRoute } from "vitepress";
-import { watch } from "vue";
+import { useData, useRoute } from 'vitepress';
+import { watch } from 'vue';
 
 export default {
-  name: "SideBarHeader",
+  name: 'SideBarHeader',
   data: () => ({
     text: undefined,
     subText: undefined,
@@ -32,8 +32,8 @@ export default {
   methods: {
     showVersions(path) {
       if (
-        path.indexOf("reference/airnode/") > -1 ||
-        path.indexOf("reference/ois/") > -1
+        path.indexOf('reference/airnode/') > -1 ||
+        path.indexOf('reference/ois/') > -1
       ) {
         this.show = true;
       } else this.show = undefined;

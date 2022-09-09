@@ -1,20 +1,20 @@
 <script lang="ts" setup>
-import { useSidebar } from "../composables/sidebar.js";
-import VPNavBarTitle from "./VPNavBarTitle.vue";
-import VPNavBarSearch from "./VPNavBarSearch.vue";
-import VPNavBarMenu from "./VPNavBarMenu.vue";
-import VPNavBarTranslations from "./VPNavBarTranslations.vue";
-import VPNavBarAppearance from "./VPNavBarAppearance.vue";
-import VPNavBarSocialLinks from "./VPNavBarSocialLinks.vue";
-import VPNavBarExtra from "./VPNavBarExtra.vue";
-import VPNavBarHamburger from "./VPNavBarHamburger.vue";
+import { useSidebar } from '../composables/sidebar.js';
+import VPNavBarTitle from './VPNavBarTitle.vue';
+import VPNavBarSearch from './VPNavBarSearch.vue';
+import VPNavBarMenu from './VPNavBarMenu.vue';
+import VPNavBarTranslations from './VPNavBarTranslations.vue';
+import VPNavBarAppearance from './VPNavBarAppearance.vue';
+import VPNavBarSocialLinks from './VPNavBarSocialLinks.vue';
+import VPNavBarExtra from './VPNavBarExtra.vue';
+import VPNavBarHamburger from './VPNavBarHamburger.vue';
 
 defineProps<{
   isScreenOpen: boolean;
 }>();
 
 defineEmits<{
-  (e: "toggle-screen"): void;
+  (e: 'toggle-screen'): void;
 }>();
 
 const { hasSidebar } = useSidebar();
@@ -132,7 +132,7 @@ const { hasSidebar } = useSidebar();
   width: 1px;
   height: 24px;
   background-color: var(--vp-c-divider-light);
-  content: "";
+  content: '';
 }
 
 .menu + .appearance::before,

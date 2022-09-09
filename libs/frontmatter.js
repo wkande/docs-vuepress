@@ -1,14 +1,14 @@
 // https://coderrocketfuel.com/article/recursively-list-all-the-files-in-a-directory-using-node-js
 
 //requiring path and fs modules
-const path = require("path");
-const fs = require("fs");
-const fsp = require("fs/promises");
+const path = require('path');
+const fs = require('fs');
+const fsp = require('fs/promises');
 
 //joining path of directory
-const directoryPath = path.join(__dirname, "../docs");
-const matter = require("gray-matter");
-const { mainModule } = require("process");
+const directoryPath = path.join(__dirname, '../docs');
+const matter = require('gray-matter');
+const { mainModule } = require('process');
 let mdFiles = [];
 let frontmatterArray = [];
 
@@ -19,10 +19,10 @@ async function getAllFiles(dirPath, arrayOfFiles) {
   arrayOfFiles = arrayOfFiles || [];
 
   files.forEach(function (file) {
-    if (fs.statSync(dirPath + "/" + file).isDirectory()) {
-      arrayOfFiles = getAllFiles(dirPath + "/" + file, arrayOfFiles);
-    } else if (file.endsWith(".md")) {
-      mdFiles.push(path.join(dirPath, "/", file));
+    if (fs.statSync(dirPath + '/' + file).isDirectory()) {
+      arrayOfFiles = getAllFiles(dirPath + '/' + file, arrayOfFiles);
+    } else if (file.endsWith('.md')) {
+      mdFiles.push(path.join(dirPath, '/', file));
     }
   });
   //console.log('+++++ END getAllFiles() +++++')
@@ -34,7 +34,7 @@ async function getFrontmatter(dirPath) {
     const file = mdFiles[i];
     //console.log(111, file);
     try {
-      let f = await fsp.readFile(file, "utf8");
+      let f = await fsp.readFile(file, 'utf8');
       let frontmatter = {};
       frontmatter.title = matter(f).data.title.toLowerCase();
       frontmatter.sidebarHeader = matter(f).data.sidebarHeader.toLowerCase();
@@ -51,23 +51,23 @@ async function getFrontmatter(dirPath) {
 async function validate(frontmatter) {
   if (!frontmatter.sidebarHeader) {
     console.error(frontmatter.path);
-    console.error("   missing sidebarHeader >", frontmatter.sidebarHeader);
+    console.error('   missing sidebarHeader >', frontmatter.sidebarHeader);
   }
 }
 
 async function main() {
-  console.log("\n> directoryPath", directoryPath);
-  await getAllFiles(directoryPath + "/explore");
-  await getAllFiles(directoryPath + "/guides");
-  await getAllFiles(directoryPath + "/reference");
-  console.log("> mdFiles", mdFiles.length);
-  console.log("> calling getFrontmatter()");
+  console.log('\n> directoryPath', directoryPath);
+  await getAllFiles(directoryPath + '/explore');
+  await getAllFiles(directoryPath + '/guides');
+  await getAllFiles(directoryPath + '/reference');
+  console.log('> mdFiles', mdFiles.length);
+  console.log('> calling getFrontmatter()');
   await getFrontmatter();
   //console.log(frontmatterArray)
 
   try {
     fs.writeFileSync(
-      directoryPath + "/_components/search/frontmatter.json",
+      directoryPath + '/_components/search/frontmatter.json',
       JSON.stringify(frontmatterArray)
     );
   } catch (err) {
@@ -77,14 +77,14 @@ async function main() {
   // Test find
   // Search Words: uides build
   // https://stackoverflow.com/questions/7364150/find-object-by-id-in-an-array-of-javascript-objects
-  const word = "guides";
-  const word2 = "journey";
-  const word3 = "about";
-  console.log("----- quides -----");
+  const word = 'guides';
+  const word2 = 'journey';
+  const word3 = 'about';
+  console.log('----- quides -----');
   console.log(
     frontmatterArray.filter((x) => x.sidebarHeader.indexOf(word) > -1)
   );
-  console.log("----- journey -----");
+  console.log('----- journey -----');
   console.log(
     frontmatterArray.filter(
       (x) => x.title.indexOf(word2) > -1 && x.title.indexOf(word3) > -1

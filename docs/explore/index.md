@@ -24,7 +24,7 @@ Moving from VuePress `v1` to VitePress `v1`.
 
 ```js
 let i = 0;
-console.log("HELLO WORLD"); // Long code comment to detect scroll.
+console.log('HELLO WORLD'); // Long code comment to detect scroll.
 ```
 
 ## Custom Tabs (Vue 3x) Component
@@ -33,11 +33,13 @@ console.log("HELLO WORLD"); // Long code comment to detect scroll.
 
 @tab:Mac OS
 
-Below is the code you can copy. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Below is the code you can copy. Lorem ipsum dolor sit amet, consectetur
+adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua.
 
 ```js
 let i = 0;
-console.log("HELLO WORLD"); // Long code comment to detect scroll.
+console.log('HELLO WORLD'); // Long code comment to detect scroll.
 ```
 
 @tab:Windows
@@ -52,15 +54,13 @@ Go to [Airnode](/reference/airnode/latest/)!
 
 ## Fancy Btn using a slot
 
-Nothing fancy about it.
-<FancyButton >Click me</FancyButton>
+Nothing fancy about it. <FancyButton >Click me</FancyButton>
 
 ## Component with internal markdown-it complier
 
 ## <UiMarkdown markdown="
 
-[link here](/)
-<br/>
+[link here](/) <br/>
 
 ```js
 let s = 2;
@@ -79,6 +79,16 @@ let s = 2;
   </code></pre>
 </p>
 
-Talk about the API3 project. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Talk about the API3 project. Lorem ipsum dolor sit amet, consectetur adipiscing
+elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.

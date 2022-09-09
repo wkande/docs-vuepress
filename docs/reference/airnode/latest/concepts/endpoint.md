@@ -33,7 +33,7 @@ computed in JS (using ethers.js) as follows:
 ```js
 ethers.utils.keccak256(
   ethers.utils.defaultAbiCoder.encode(
-    ["string", "string"],
+    ['string', 'string'],
     [oisTitle, endpointName]
   )
 );
