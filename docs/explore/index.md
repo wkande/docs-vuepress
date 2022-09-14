@@ -27,7 +27,7 @@ let i = 0;
 console.log('HELLO WORLD'); // Long code comment to detect scroll.
 ```
 
-stage
+stage - 2
 
 Second test to stage.
 
