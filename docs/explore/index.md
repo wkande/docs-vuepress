@@ -27,7 +27,7 @@ let i = 0;
 console.log('HELLO WORLD'); // Long code comment to detect scroll.
 ```
 
-BRANCH 6
+BRANCH 6.1
 
 ## Custom Tabs (Vue 3x) Component
 
