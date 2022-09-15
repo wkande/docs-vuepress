@@ -5,6 +5,4 @@ sidebarHeader: Explore
 
 # {{$frontmatter.title}}
 
-branch 12 - second merge
-
-branch 13 - second commit
+Added this text after branch-15 has been deleted via its PR

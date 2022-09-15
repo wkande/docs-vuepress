@@ -27,6 +27,8 @@ let i = 0;
 console.log('HELLO WORLD'); // Long code comment to detect scroll.
 ```
 
+This is a deployment from the firebase-push script
+
 ## Custom Tabs (Vue 3x) Component
 
 <Tabs>
