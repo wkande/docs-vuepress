@@ -27,3 +27,5 @@ git commit -m 'Deploying a locally built /dist folder to main:firebase-pages as 
 git push -f git@github.com:wkande/vitepress-docs.git main:firebase-pages
 
 cd -
+
+firebase deploy
