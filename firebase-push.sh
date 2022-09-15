@@ -29,3 +29,4 @@ git push -f git@github.com:wkande/vitepress-docs.git main:firebase-pages
 cd -
 
 firebase deploy
+
