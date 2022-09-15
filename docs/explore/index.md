@@ -27,6 +27,9 @@ let i = 0;
 console.log('HELLO WORLD'); // Long code comment to detect scroll.
 ```
 
+Added back in for branch 15 which is now in a PR and this will become a new
+commit added to it.
+
 ## Custom Tabs (Vue 3x) Component
 
 <Tabs>
